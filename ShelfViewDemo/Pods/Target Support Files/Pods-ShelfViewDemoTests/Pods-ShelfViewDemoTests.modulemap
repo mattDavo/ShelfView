@@ -1,0 +1,6 @@
+framework module Pods_ShelfViewDemoTests {
+  umbrella header "Pods-ShelfViewDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

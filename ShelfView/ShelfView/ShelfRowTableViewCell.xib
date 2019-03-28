@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-SemiBold.ttf">
+            <string>SourceSansPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shelfRowCell" rowHeight="218" id="3vG-J4-L6J" customClass="ShelfRowTableViewCell" customModule="ShelfView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3vG-J4-L6J" id="Zeb-Yg-Zn2">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="217.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shelf Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-aT-Lqa">
+                        <rect key="frame" x="20" y="8" width="372" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="eGU-Nz-ATu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dFk-kl-j5f" customClass="ShelfRowCollectionView" customModule="ShelfView" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="41" width="412" height="176.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZfM-m5-0ZG">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lv8-aT-Lqa" secondAttribute="trailing" constant="20" id="4KZ-O4-kB3"/>
+                    <constraint firstItem="dFk-kl-j5f" firstAttribute="leading" secondItem="Zeb-Yg-Zn2" secondAttribute="leading" id="6w2-Gw-gGw"/>
+                    <constraint firstItem="lv8-aT-Lqa" firstAttribute="leading" secondItem="Zeb-Yg-Zn2" secondAttribute="leading" constant="20" id="PGC-sw-kkC"/>
+                    <constraint firstItem="dFk-kl-j5f" firstAttribute="top" secondItem="lv8-aT-Lqa" secondAttribute="bottom" constant="8" id="dk7-0a-U5s"/>
+                    <constraint firstAttribute="bottom" secondItem="dFk-kl-j5f" secondAttribute="bottom" id="lcO-ac-gBn"/>
+                    <constraint firstItem="lv8-aT-Lqa" firstAttribute="top" secondItem="Zeb-Yg-Zn2" secondAttribute="top" constant="8" id="vnT-5j-dE5"/>
+                    <constraint firstAttribute="trailing" secondItem="dFk-kl-j5f" secondAttribute="trailing" id="yIA-In-HCg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shelfRow" destination="dFk-kl-j5f" id="O4e-B4-jkP"/>
+                <outlet property="title" destination="lv8-aT-Lqa" id="BKj-gs-Bek"/>
+                <outlet property="titleHeightConstraint" destination="eGU-Nz-ATu" id="VUO-6d-doy"/>
+            </connections>
+            <point key="canvasLocation" x="86.400000000000006" y="107.0464767616192"/>
+        </tableViewCell>
+    </objects>
+</document>

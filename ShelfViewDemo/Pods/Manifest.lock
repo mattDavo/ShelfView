@@ -1,0 +1,16 @@
+PODS:
+  - ShelfView (1.0.0)
+
+DEPENDENCIES:
+  - ShelfView (from `../`)
+
+EXTERNAL SOURCES:
+  ShelfView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ShelfView: a42addbf85d78e0ebbc71694e817f64de1e8f362
+
+PODFILE CHECKSUM: e552ef8d4f8a69b8925f0f6f3a34a021a96fb215
+
+COCOAPODS: 1.5.3

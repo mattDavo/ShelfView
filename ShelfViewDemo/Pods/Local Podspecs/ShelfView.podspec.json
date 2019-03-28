@@ -1,0 +1,24 @@
+{
+  "name": "ShelfView",
+  "version": "1.0.0",
+  "summary": "A simple Swift library for creating a shelf view.",
+  "description": "A simple and easy to use Swift library for create a shelf view. Create shelf views like how you would create a UITableView or UICollectionView",
+  "homepage": "https://github.com/mattDavo/ShelfView",
+  "license": "MIT",
+  "authors": {
+    "Matthew Davidson": "mad1512@optusnet.com.au"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "https://github.com/mattDavo/ShelfView.git",
+    "tag": "1.0.0"
+  },
+  "source_files": [
+    "ShelfView/ShelfView",
+    "ShelfView/ShelfView/**/*.xib"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "swift_version": "4.2"
+}
