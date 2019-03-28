@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ShelfView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A simple Swift library for creating a shelf view."
 
   # This description is used to generate tags and improve search results.
