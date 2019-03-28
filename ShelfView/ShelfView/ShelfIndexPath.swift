@@ -18,6 +18,11 @@ public struct ShelfIndexPath {
      The index of a item's shelf.
      */
     public var shelf: Int
+    
+    public init(item: Int, shelf: Int) {
+        self.item = item
+        self.shelf = shelf
+    }
 }
 
 extension ShelfIndexPath: CustomStringConvertible {
